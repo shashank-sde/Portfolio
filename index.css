@@ -133,6 +133,7 @@ a:link {
   width: 100vw;
   height: max-content;
   padding: 1vh;
+  padding-bottom: 3vh;
   background: rgb(2, 0, 36);
   background: linear-gradient(
     90deg,
@@ -162,6 +163,7 @@ a:link {
   margin-top: 0;
   padding-top: 2vh;
   padding-bottom: 0vh;
+  margin-bottom: 1.7vh;
 }
 
 .projectssection {
@@ -174,6 +176,7 @@ a:link {
     rgba(231, 200, 142, 1) 100%
   );
   text-align: center;
+  padding-bottom: 1.5vh;
 }
 
 .cardsection {
@@ -199,9 +202,9 @@ a:link {
 
 .pic {
   width: 82%;
-  border-radius: 0px;
+  border-radius: 10px;
   border: 2px solid black;
-  margin-bottom: 1.5vh;
+  margin-bottom: 3vh;
 }
 
 .webdesc {
@@ -215,6 +218,7 @@ a:link {
   padding-top: 1vh;
   padding-bottom: 1.5vh;
   border: 1px solid green;
+  border-radius: 6px;
 }
 
 .codelinkbtn {
@@ -225,44 +229,9 @@ a:link {
   background-color: black;
 }
 
-.servicessection {
-  width: 100vw;
-  height: auto;
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(183, 237, 116, 1) 0%,
-    rgba(255, 255, 255, 1) 100%
-  );
-  text-align: center;
-}
-
-.servhead {
-  margin: 0;
-  padding-top: 5vh;
-  font-size: xxx-large;
-}
-
-.servcard {
-  width: fit-content;
-  height: fit-content;
-  padding: 20px;
-  border-radius: 15px;
-  background-color: #fff;
-  border: 3px solid brown;
-  font-family: "Acme", sans-serif;
-  place-content: center;
-  align-self: center;
-  justify-content: center;
-  justify-self: center;
-  box-shadow: 5px 6px 20px black;
-}
-
 .contactsection {
   width: 100vw;
   height: 45vw;
-  background: rgb(2, 0, 36);
   background: linear-gradient(
     90deg,
     rgba(2, 0, 36, 1) 0%,
@@ -288,8 +257,8 @@ a:link {
 
 .contacthead {
   margin: 0;
-  padding-top: 5vh;
-  margin-bottom: 4vh;
+  padding-top: 0vh;
+  margin-bottom: 2vh;
   font-size: xxx-large;
 }
 
@@ -348,338 +317,6 @@ footer {
   .visit:hover {
     background-color: #82f882;
     box-shadow: 10px 10px 20px rgb(54, 93, 132);
-  }
-  .servgrid {
-    display: grid;
-    grid-template-columns: 33.33vw 33.33vw 33.33vw;
-    grid-template-rows: 1fr 1fr;
-    column-gap: 1px;
-    row-gap: 1px;
-    width: 100%;
-    min-height: 60vh;
-  }
-
-  /* construction area */
-
-  .s1 {
-    position: relative;
-    animation-name: example1;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-  }
-
-  @keyframes example1 {
-    0% {
-      background-color: rgb(228, 134, 134);
-      color: black;
-      left: 0px;
-      top: 0px;
-    }
-    15% {
-      background-color: rgb(228, 228, 150);
-      color: black;
-      left: 33.33vw;
-      top: 0px;
-    }
-    30% {
-      background-color: rgb(131, 131, 218);
-      color: black;
-      left: 66.66vw;
-      top: 0px;
-    }
-    45% {
-      background-color: rgb(166, 234, 166);
-      color: black;
-      left: 66.66vw;
-      top: 30vh;
-    }
-    62% {
-      background-color: rgb(227, 169, 169);
-      color: black;
-      left: 33.33vw;
-      top: 30vh;
-    }
-    84% {
-      background-color: rgb(224, 133, 249);
-      color: black;
-      left: 0px;
-      top: 30vh;
-    }
-    100% {
-      background-color: rgb(193, 248, 181);
-      color: black;
-      left: 0px;
-      top: 0px;
-    }
-  }
-
-  .s2 {
-    position: relative;
-    animation-name: example2;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-  }
-
-  @keyframes example2 {
-    0% {
-      background-color: rgb(228, 134, 134);
-      color: black;
-      left: 0px;
-      top: 0px;
-    }
-    15% {
-      background-color: rgb(228, 228, 150);
-      color: black;
-      left: 33.33vw;
-      top: 0px;
-    }
-    30% {
-      background-color: rgb(131, 131, 218);
-      color: black;
-      left: 33.33vw;
-      top: 30vh;
-    }
-    45% {
-      background-color: rgb(166, 234, 166);
-      color: black;
-      left: 0px;
-      top: 30vh;
-    }
-    62% {
-      background-color: rgb(227, 169, 169);
-      color: black;
-      left: -33.33vw;
-      top: 30vh;
-    }
-    84% {
-      background-color: rgb(224, 133, 249);
-      color: black;
-      left: -33.33vw;
-      top: 0px;
-    }
-    100% {
-      background-color: rgb(193, 248, 181);
-      color: black;
-      left: 0px;
-      top: 0px;
-    }
-  }
-
-  .s3 {
-    position: relative;
-    animation-name: example3;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-  }
-
-  @keyframes example3 {
-    0% {
-      background-color: rgb(228, 134, 134);
-      color: black;
-      left: 0px;
-      top: 0px;
-    }
-    15% {
-      background-color: rgb(228, 228, 150);
-      color: black;
-      left: 0px;
-      top: 30vh;
-    }
-    30% {
-      background-color: rgb(131, 131, 218);
-      color: black;
-      left: -33.33vw;
-      top: 30vh;
-    }
-    45% {
-      background-color: rgb(166, 234, 166);
-      color: black;
-      left: -66.66vw;
-      top: 30vh;
-    }
-    62% {
-      background-color: rgb(227, 169, 169);
-      color: black;
-      left: -66.66vw;
-      top: 0px;
-    }
-    84% {
-      background-color: rgb(224, 133, 249);
-      color: black;
-      left: -33.33vw;
-      top: 0px;
-    }
-    100% {
-      background-color: rgb(193, 248, 181);
-      color: black;
-      left: 0px;
-      top: 0px;
-    }
-  }
-
-  .s6 {
-    position: relative;
-    animation-name: example6;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-  }
-
-  @keyframes example6 {
-    0% {
-      background-color: rgb(228, 134, 134);
-      color: black;
-      left: 0px;
-      top: 0px;
-    }
-    15% {
-      background-color: rgb(228, 228, 150);
-      color: black;
-      left: -33.33vw;
-      top: 0px;
-    }
-    30% {
-      background-color: rgb(131, 131, 218);
-      color: black;
-      left: -66.66vw;
-      top: 0px;
-    }
-    45% {
-      background-color: rgb(166, 234, 166);
-      color: black;
-      left: -66.66vw;
-      top: -30vh;
-    }
-    62% {
-      background-color: rgb(227, 169, 169);
-      color: black;
-      left: -33.33vw;
-      top: -30vh;
-    }
-    84% {
-      background-color: rgb(224, 133, 249);
-      color: black;
-      left: 0px;
-      top: -30vh;
-    }
-    100% {
-      background-color: rgb(193, 248, 181);
-      color: black;
-      left: 0px;
-      top: 0px;
-    }
-  }
-
-  .s5 {
-    position: relative;
-    animation-name: example5;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-  }
-
-  @keyframes example5 {
-    0% {
-      background-color: rgb(228, 134, 134);
-      color: black;
-      left: 0px;
-      top: 0px;
-    }
-    15% {
-      background-color: rgb(228, 228, 150);
-      color: black;
-      left: -33.33vw;
-      top: 0px;
-    }
-    30% {
-      background-color: rgb(131, 131, 218);
-      color: black;
-      left: -33.33vw;
-      top: -30vh;
-    }
-    45% {
-      background-color: rgb(166, 234, 166);
-      color: black;
-      left: 0px;
-      top: -30vh;
-    }
-    62% {
-      background-color: rgb(227, 169, 169);
-      color: black;
-      left: 33.33vw;
-      top: -30vh;
-    }
-    84% {
-      background-color: rgb(224, 133, 249);
-      color: black;
-      left: 33.33vw;
-      top: 0px;
-    }
-    100% {
-      background-color: rgb(193, 248, 181);
-      color: black;
-      left: 0px;
-      top: 0px;
-    }
-  }
-
-  .s4 {
-    position: relative;
-    animation-name: example4;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-  }
-
-  @keyframes example4 {
-    0% {
-      background-color: rgb(228, 134, 134);
-      color: black;
-      left: 0px;
-      top: 0px;
-    }
-    15% {
-      background-color: rgb(228, 228, 150);
-      color: black;
-      left: 0vw;
-      top: -30vh;
-    }
-    30% {
-      background-color: rgb(131, 131, 218);
-      color: black;
-      left: 33.33vw;
-      top: -30vh;
-    }
-    45% {
-      background-color: rgb(166, 234, 166);
-      color: black;
-      left: 66.66vw;
-      top: -30vh;
-    }
-    62% {
-      background-color: rgb(227, 169, 169);
-      color: black;
-      left: 66.66vw;
-      top: 0px;
-    }
-    84% {
-      background-color: rgb(224, 133, 249);
-      color: black;
-      left: 33.33vw;
-      top: 0px;
-    }
-    100% {
-      background-color: rgb(193, 248, 181);
-      color: black;
-      left: 0px;
-      top: 0px;
-    }
-  }
-
-  /* construction ends */
-
-  .servcard:hover {
-    background-color: rgba(189, 5, 189, 0.97);
-    border: 3px solid blue;
-    color: yellow;
-    font-weight: bold;
   }
 
   .submitbtn:hover {
@@ -778,25 +415,6 @@ footer {
     display: block;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  .servgrid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    column-gap: 1px;
-    row-gap: 1px;
-    width: 100%;
-    height: 111vh;
-    padding-bottom: 3vh;
-  }
-
-  .servhead {
-    margin-bottom: 3vh;
-  }
-
-  .servcard {
-    box-shadow: 5px 6.5px 20px brown;
   }
 
   .contactsection {
