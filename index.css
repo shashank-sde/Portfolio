@@ -125,7 +125,8 @@ a:link {
 
 .aboutsection {
   width: 100vw;
-  height: 40vh;
+  height: max-content;
+  padding: 1vh;
   background: rgb(2, 0, 36);
   background: linear-gradient(
     90deg,
@@ -138,8 +139,8 @@ a:link {
 
 .abouthead {
   margin: 0;
-  padding-top: 8vh;
-  padding-bottom: 5vh;
+  padding-top: 2vh;
+  padding-bottom: 0vh;
   font-size: xxx-large;
 }
 
@@ -174,11 +175,11 @@ a:link {
 }
 
 .card {
-  width: 85%;
-  height: 50vh;
+  width: 80%;
+  height: 35vh;
   background-color: rgb(146, 212, 243);
   place-self: center;
-  border: 8px solid brown;
+  border: 2px solid green;
   border-radius: 25px;
   box-shadow: 10px 10px grey;
 }
@@ -221,13 +222,13 @@ a:link {
 .pic {
   width: 100%;
   height: 100%;
-  border-radius: 15px;
+  border-radius: 25px;
 }
 
 .projhead {
   margin-top: 0;
-  padding-top: 5vh;
-  padding-bottom: 2.5vh;
+  padding-top: 2vh;
+  padding-bottom: 0vh;
 }
 
 .servicessection {
@@ -346,20 +347,11 @@ footer {
     grid-column-end: 2;
   }
 
-  .card:hover {
-    width: 86%;
-    height: 51.5vh;
-    transition: width 0.5s, height 0.5s;
-    box-shadow: 15px 18px 15px rgb(129, 129, 11);
-  }
   .cardsection {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
   .visit:hover {
-    width: 43%;
-    height: 7vh;
-    transition: width 0.5s, height 0.5s;
     background-color: #82f882;
     box-shadow: 10px 10px 20px rgb(54, 93, 132);
   }
