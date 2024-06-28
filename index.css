@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 nav {
@@ -15,6 +16,7 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  z-index: 10;
 }
 
 h1 {
@@ -50,7 +52,7 @@ li {
 }
 
 .pdesc {
-  font-family: "Indie Flower", cursive;
+  font-family: "Cardo", serif;
 }
 
 .aboutdesc {
@@ -78,6 +80,10 @@ header {
 
 .mcaption {
   font-style: italic;
+}
+
+a {
+  text-decoration: none;
 }
 
 a:visited {
@@ -153,12 +159,14 @@ a:link {
 .projhead {
   font-weight: 600;
   font-size: xxx-large;
+  margin-top: 0;
+  padding-top: 2vh;
+  padding-bottom: 0vh;
 }
 
 .projectssection {
   width: 100vw;
-  height: 150vh;
-  background: rgb(2, 0, 36);
+  height: max-content;
   background: linear-gradient(
     90deg,
     rgba(2, 0, 36, 1) 0%,
@@ -170,65 +178,51 @@ a:link {
 
 .cardsection {
   width: 100vw;
-  height: auto;
-  /* column-gap: 2px; */
+  height: max-content;
+  padding-bottom: 2vh;
+  padding-top: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .card {
-  width: 80%;
-  height: 35vh;
-  background-color: rgb(146, 212, 243);
-  place-self: center;
-  border: 2px solid green;
-  border-radius: 25px;
-  box-shadow: 10px 10px grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding: 2vh;
 }
 
-.weblogo {
-  width: 100%;
-  height: 8vh;
-  background-color: #fff;
-  margin-top: 5vh;
-}
-
-.visit {
-  margin-top: 5vh;
-  font-family: "Bree Serif", serif;
-  font-size: larger;
-  width: 40%;
-  height: 6vh;
-  border-radius: 15px;
-  box-shadow: 10px 10px 20px grey;
-  cursor: pointer;
+.pic {
+  width: 82%;
+  border-radius: 0px;
+  border: 2px solid black;
+  margin-bottom: 1.5vh;
 }
 
 .webdesc {
   width: 80%;
-  height: 30vh;
-  background-color: #64f3db;
-  place-self: center;
-  margin-top: 5vh;
-  text-overflow: inherit;
+  height: max-content;
+  background-color: #b9fef2;
+  margin-top: 3vh;
   text-align: justify;
-  padding-left: 9%;
-  padding-right: 9%;
-  padding-top: 3.5vh;
-  padding-bottom: 5vh;
-  border: 2px solid blue;
-  border-radius: 8px;
-  box-shadow: 15px 20px 30px black;
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-top: 1vh;
+  padding-bottom: 1.5vh;
+  border: 1px solid green;
 }
 
-.pic {
-  width: 100%;
-  height: 100%;
-  border-radius: 25px;
-}
-
-.projhead {
-  margin-top: 0;
-  padding-top: 2vh;
-  padding-bottom: 0vh;
+.codelinkbtn {
+  width: 8vw;
+  padding: 1.5vh;
+  border: 0.5px solid black;
+  border-radius: 5px;
+  background-color: black;
 }
 
 .servicessection {
